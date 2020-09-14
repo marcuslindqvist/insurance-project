@@ -1,0 +1,192 @@
+
+@import { url(https://fonts.google.com/specimen/Fira+Sans?sidebar.open=true&selection.family=Fira+Sans:wght@500) 
+
+}
+
+body {
+    
+    background-color: #EBEBEB;
+
+}
+
+.grid {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 170px 170px 170px 170px 170px 170px;
+}
+.greyfooter {
+
+    background-color: #777574;
+    width: 98%;
+    height: 340px;
+    top: 2652px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h7 {
+
+    letter-spacing: -0.02em;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+ 
+h1 h2 h3 h4 h5 h6 {
+    font-family: Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.flex {
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 100%
+    
+}
+
+ 
+h3 {    
+font-family: Frank Ruhl Libre;
+font-size: 45px;
+font-weight: 900;
+font-style: normal;
+line-height: 100%;
+color: rgba(0, 0, 0, 0.8);
+margin-left: auto;
+margin-right: auto;
+letter-spacing: -initial;
+
+}
+
+img {
+    color: lightgray;
+}
+a, a:visited {
+    text-decoration: none;
+    color: black
+
+}
+
+
+.lightgreyfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a9a19e;
+    width: 98%;
+    height: 68px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.nummer {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+
+.item1 {
+    background-color: #c7ddea;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    display: flex;
+
+}
+
+.item2 {
+    background-color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.item3 {
+    background-color:#EBEBEB;
+    text-align: center;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+}
+
+.item4 {
+    background-color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+}
+
+.item5 {
+    background-color: #F17949;
+    text-align: center;
+    align-items: center;
+    letter-spacing: -0.02em;
+}
+
+.item6 {
+    background-color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    letter-spacing: -0.02em;
+}
+
+.flex {
+    width: 28%;
+    height: 23%;
+    color: rgba(0, 0, 0, 0.4);
+ 
+}
+
+@media screen and (min-width: 700px) {
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 240px 240px;
+        grid-auto-flow: column;
+        max-width: 98%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .item1 {
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    
+    .item2 {
+        grid-column: 2;
+        grid-row: 1/2;
+    }
+    
+    .item3 {
+        grid-column: 3;
+        grid-row: 1;    
+    }
+    
+    .item4 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .item5 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .item6 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+}
+    
+
