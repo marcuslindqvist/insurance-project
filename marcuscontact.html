@@ -12,11 +12,17 @@
     <div class="wrapper">
         <header>
             <div class="item1">
-
-                <h1>
-                    Oh hello there!
-                </h1>
-                <img src="fatherbaby.png" alt="">
+                <div class="header_empty">
+                    <!-- fyller ut den vänstra tredjedelen i headern för att de andra ska placeras rätt-->
+                </div>
+                <div class="header_text">
+                    <h1>
+                        Oh hello there!
+                    </h1>
+                </div>
+                <div class="header_img">
+                    <img src="fatherbaby.png" alt="">
+                </div>
             </div>
             <section class="navbar">
                 <nav>
@@ -36,39 +42,49 @@
         </header>
 
         <main>
-            <div class="main_grid">
+            <div class="contact_form_container">
+
                 <section class="section_a">
                     <h1>Whats on your mind?</h1>
                 </section>
 
                 <section class="section_b">
+
                     <div class="contact_form">
                         <form action="action_page.php">
                             <label for="email">Your email</label>
                             <input type="text" id="email" name="email">
 
                             <label for="message">Your message</label>
-                            <input type="text" name="message" id="message">
+                            <input type="text" name="message" id="message" class="textbox"
+                                value="Dear Insurance company...">
+
+                            <input type="submit" class="button" value="SEND MESSAGE">
                         </form>
                     </div>
-                </section>
 
-                <section class="map">
-                    <div class="map_box1">
-                        <div class="adress_box">
-                            <h1>Come visit us!</h1>
-                            <p>2219 Griffin Street</p>
-                            <p>San Francisco</p>
-                        </div>
-                    </div>
-
-                    <img src="pin.png" alt="">
-
-                    <div class="map_box2">
-
-                    </div>
                 </section>
             </div>
+
+            <section class="map">
+                <div class="map_box1">
+                    <div class="adress_box">
+                        <h1>Come visit us!</h1>
+                        <p>2219 Griffin Street</p>
+                        <p>San Francisco</p>
+                    </div>
+                </div>
+
+                <div class="map_box2">
+                    <img src="pin.png" alt="">
+                </div>
+
+                <div class="map_box3">
+
+                </div>
+
+            </section>
+
         </main>
 
         <footer>
