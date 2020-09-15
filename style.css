@@ -25,6 +25,22 @@ background-color: #A9A19E;
     background-color: #fff;
 }
 
+nav,
+.join_now,
+p {
+    font-family: Fira Sans, Sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+h1,
+h2,
+h3 {
+    font-family: Frank Ruhl Libre, serif;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    font-style: normal;
+}
+
 .header_grid {
     display: grid;
     grid-template-columns: 100%;
@@ -50,7 +66,6 @@ background-color: #A9A19E;
 .text_container1 {
     max-width: 40ch;
     line-height: 24px;
-    font-weight: 500;
     margin-top: 30px;
 }
 
@@ -71,22 +86,14 @@ background-color: #A9A19E;
     border-radius: 100px;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
     border: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.8);;
     font-size: 10px;
-    font-weight: bold;
+    font-weight: 800;
     margin-top: 40px;
-}
-
-h1,
-h2 {
-    font-family: Frank Ruhl Libre, serif;
-    font-weight: 900;
-    letter-spacing: -0.02em;
 }
 
 .header_grid p {
     color: rgba(0, 0, 0, 0.6);
-    font-family: Fira Sans, sans-serif;
 }
 
 .text_container2,
@@ -115,18 +122,11 @@ h2 {
 .text_container3 p {
     font-size: 0.7rem;
     margin: 0px;
-}
-
-a:link,
-nav,
-.join_now {
-    font-family: Fira Sans, Sans-serif;
-    font-style: normal;
+    font-weight: bold;
 }
 
 nav {
     display: none;
-    font-weight: 600;
 }
 
 ul {
@@ -154,7 +154,6 @@ li:first-child a{
     color: #000; 
 }
 
-
 .box4 {
     height: 1580px;
 }
@@ -179,6 +178,10 @@ li:first-child a{
     margin-bottom: 10px;
 }
 
+.box4 .join_now {
+    display: none;
+}
+
 .whiteh2 {
     font-size: 45px;
     line-height: 100%;
@@ -186,13 +189,8 @@ li:first-child a{
     margin-top: 0px;
 }
 
-.btn {
-    display: none;
-}
 
 .grey_p {
-    font-family: Fira Sans, sans-serif;
-    font-weight: 500;
     font-size: 14px;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.6);
@@ -219,9 +217,6 @@ li:first-child a{
     text-align: center;
     position: relative;
     top: -26px;
-    font-family: Frank Ruhl Libre;
-    font-style: normal;
-    font-weight: 1000;
     font-size: 16px;
     line-height: 20px;
     color: rgba(0, 0, 0, 0.9);
@@ -230,10 +225,8 @@ li:first-child a{
 .lightgrey_p {
     position: relative;
     top: -30px;
-    font-family: Fira Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 11px;
+    font-weight: bold;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.4);
     max-width: 84%;
@@ -281,7 +274,6 @@ li:first-child a{
     align-items: center;
 }
 
-
 .box5 h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -308,16 +300,7 @@ li:first-child a{
 }
 
 .number p {
-margin: 10px;
-}
-
-h3 {    
-font-family: Frank Ruhl Libre;
-font-size: 45px;
-font-weight: 900;
-font-style: normal;
-line-height: 100%;
-color: rgba(0, 0, 0, 0.8);
+    margin: 10px;
 }
 
 .grid_item1 {
@@ -327,11 +310,13 @@ color: rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 
-.item11,
-.item12,
-.item13,
-.item14,
-.item15 {
+.grid_item1 h3 {    
+    font-size: 45px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.grid_item {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -342,14 +327,10 @@ color: rgba(0, 0, 0, 0.8);
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: Fira Sans;
-    font-style: normal;
-    font-weight: 500;
     color: rgba(0, 0, 0, 0.7);
     font-size: 0.9rem;
     line-height: 20px;
 }
-
 
 .lightgreyfooter {
     display: none;
@@ -359,13 +340,6 @@ color: rgba(0, 0, 0, 0.8);
     background-color: #777574;
     height: 218px;
  }
-
- /*a, a:visited {
-    text-decoration: none;
-    color: black;
-    
- }*/
-
 
 
 @media screen and (min-width: 700px) {
@@ -383,7 +357,6 @@ color: rgba(0, 0, 0, 0.8);
 
     .item1 h1 {
         min-width: 13ch;
-
     }
 
     .item2 {
@@ -401,11 +374,13 @@ color: rgba(0, 0, 0, 0.8);
 
     nav {
         display: block;
+        font-weight: 600;
     }
 
     .box4 {
         height: 612px;
     }
+
     .box4_content {
         max-width: 78%;
         flex-direction: row;
@@ -423,25 +398,9 @@ color: rgba(0, 0, 0, 0.8);
         min-width: 35ch;
     }
 
-    .btn {
-        width: 131px;
-        height: 39px;
-        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-        border-radius: 100px;
-        border-width: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 58px;
-    }
-    
-    .btn_text {
-        font-family: Fira Sans, sans-serif;
-        font-weight: 800;
-        font-style: normal;
-        font-size: 10px;
-        line-height: 12px;
-        color: rgba(0, 0, 0, 0.8);
+    .box4 .join_now {
+        display: block;
+        margin-top: 62px;
     }
 
     .smallboxes {
@@ -480,9 +439,6 @@ color: rgba(0, 0, 0, 0.8);
 
     .lightgreyfooter p {
         margin-top: 0;
-        font-family: Fira Sans;
-        font-style: normal;
-        font-weight: 500;
         font-size: 1rem;
         line-height: 20px;
         color: rgba(0, 0, 0, 0.7);
@@ -491,9 +447,7 @@ color: rgba(0, 0, 0, 0.8);
     .greyfooter {
         height: 340px;
      }
-    
 }
-
 
 @media screen and (min-width: 1000px) {
     
@@ -502,3 +456,4 @@ color: rgba(0, 0, 0, 0.8);
         margin-left: auto;
         margin-right: auto;
     }
+}
