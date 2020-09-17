@@ -14,6 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    height: 500px;
 }
 
 .header_text h1,
@@ -22,7 +24,7 @@ body {
     font-size: 2.5rem;
     font-weight: 900;
     font-style: normal;
-    font-family: Frank Ruhl Libre,
+    font-family: 'Frank Ruhl Libre',
         serif;
     font-weight: 900;
     letter-spacing: -0.02em;
@@ -35,7 +37,7 @@ body {
 
 .navbar {
     background-color: white;
-    font-family: Fira Sans,
+    font-family: 'Fira Sans',
         Sans-serif;
     font-style: normal;
 }
@@ -66,10 +68,11 @@ li:last-child a {
     color: black;
 }
 
-.contact_form_container {
+.contact_container {
     background-color: #A9A19E;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 40px;
 }
 
@@ -81,7 +84,7 @@ li:last-child a {
 
 .section_a,
 .section_b {
-    display: flex;
+    width: 80%;
     justify-content: center;
     align-items: center;
 }
@@ -89,13 +92,14 @@ li:last-child a {
 .contact_form {
     display: flex;
     flex-direction: column;
-    max-width: 70%;
+    max-width: 80%;
     min-width: 200px;
+    vertical-align: baseline;
 }
 
 form label {
     display: block;
-    font-family: Fira Sans, sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 0.7rem;
@@ -115,6 +119,13 @@ form input {
 
 form .textbox {
     height: 80px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #000000;
 }
 
 form .button {
@@ -124,22 +135,27 @@ form .button {
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
     border: none;
     color: black;
-    font-family: Fira Sans, sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 0.6rem;
     font-weight: bold;
 }
 
 .map {
     background-image: url(map.png);
-    background-size: contain;
+    background-size: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 60px 30px 30px 30px;
+}
+
+.map .map_box2 {
+    visibility: collapse;
 }
 
 .map_box2 img {
-    visibility: collapse;
+    visibility: hidden;
 }
 
 .map .adress_box {
@@ -152,7 +168,7 @@ form .button {
 }
 
 .map .adress_box h1 {
-    font-family: Frank Ruhl Libre,
+    font-family: 'Frank Ruhl Libre',
         serif;
     font-weight: 900;
     line-height: 100%;
@@ -162,11 +178,11 @@ form .button {
 }
 
 .map .adress_box p {
-    font-family: Fira Sans, sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1rem;
-    line-height: 24px;
+    line-height: 0.7em;
     opacity: 0.7;
 }
 
@@ -179,9 +195,9 @@ footer {
     background-color: #777574;
 }
 
+/*  följande regler är för viewport minst 700px  */
 @media screen and (min-width: 700px) {
     .wrapper {
-        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -213,93 +229,41 @@ footer {
         max-width: 100%;
     }
 
-    .navbar {
-        background-color: white;
-        font-family: Fira Sans,
-            Sans-serif;
-        font-style: normal;
-    }
-
     ul {
-        width: 100%;
         height: 60px;
-        list-style: none;
-        padding-left: 0px;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
     }
 
-    a:link {
-        color: rgba(0, 0, 0, 0.5);
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 1rem;
-        line-height: 100%;
-        letter-spacing: -0.02em;
-        text-decoration: none;
-    }
 
-    a:link:active {
-        color: black;
-    }
-
-    li:last-child a {
-        color: black;
-    }
-
-    .contact_form_container {
+    .contact_container {
         height: 400px;
-        background-color: #A9A19E;
-        display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding: 40px;
+        padding-top: 80px;
     }
 
     .section_a,
     .section_b {
-        padding-top: 40px;
         width: 50%;
         min-width: 350px;
-        display: flex;
-    }
-
-    .section_a {
-        align-items: center;
     }
 
     .section_a h1 {
         max-width: 14ch;
         min-width: min-content;
-        color: white;
         margin: 0;
     }
 
     .section_b {
-        padding-left: 40px;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
     form label {
-        font-family: Fira Sans, sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 0.7rem;
-        line-height: 100%;
-        color: #FFFFFF;
-        opacity: 0.7;
         margin-bottom: 15px;
     }
 
     form input {
-        width: 100%;
         margin-bottom: 40px;
-        border-radius: 2px;
-        border-style: none;
         height: 30px;
     }
 
@@ -310,21 +274,12 @@ footer {
     form .button {
         width: 131px;
         height: 39px;
-        border-radius: 100px;
-        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-        border: none;
-        color: black;
-        font-family: Fira Sans, sans-serif;
-        font-size: 0.6rem;
-        font-weight: bold;
         align-self: flex-end;
     }
 
     .map {
         height: 300px;
-        background-image: url(map.png);
-        background-size: contain;
-        display: flex;
+        flex-direction: row;
         padding: 40px;
     }
 
@@ -338,38 +293,10 @@ footer {
     }
 
     .map .map_box2 {
-        width: 10%;
+        width: 40%;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .map .adress_box {
-        background-color: #FAB131;
-        padding: 20px;
-        color: white;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        height: max-content;
-    }
-
-    .map .adress_box h1 {
-        font-family: Frank Ruhl Libre,
-            serif;
-        font-weight: 900;
-        line-height: 100%;
-        font-style: normal;
-        font-size: 2.5rem;
-        margin-block-start: 0;
-    }
-
-    .map .adress_box p {
-        font-family: Fira Sans, sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1rem;
-        line-height: 0.7em;
-        opacity: 0.7;
     }
 
     .map img {
@@ -380,9 +307,9 @@ footer {
 
     footer {
         height: 300px;
-        background-color: #777574;
     }
 
+    /*Denna query är för viewports större än 1000px*/
     @media screen and (min-width: 1000px) {
 
         .wrapper {
