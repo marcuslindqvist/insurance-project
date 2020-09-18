@@ -64,10 +64,6 @@ a:link {
     text-decoration: none;
 }
 
-li:last-child a {
-    color: black;
-}
-
 .contact_container {
     background-color: #A9A19E;
     display: flex;
@@ -82,8 +78,7 @@ li:last-child a {
     color: white;
 }
 
-.section_a,
-.section_b {
+.section_a, {
     width: 80%;
     justify-content: center;
     align-items: center;
@@ -241,8 +236,7 @@ footer {
         padding-top: 80px;
     }
 
-    .section_a,
-    .section_b {
+    .section_a, {
         width: 50%;
         min-width: 350px;
     }
@@ -253,10 +247,6 @@ footer {
         margin: 0;
     }
 
-    .section_b {
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
 
     form label {
         margin-bottom: 15px;
